@@ -1,4 +1,4 @@
-package net.acladior.jobsandbackgrounds.items;
+package net.acladior.jobsandbackgrounds.item;
 
 import net.acladior.jobsandbackgrounds.JobsAndBackgrounds;
 import net.minecraft.world.item.Item;

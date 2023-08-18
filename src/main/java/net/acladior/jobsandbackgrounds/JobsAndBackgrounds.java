@@ -1,8 +1,7 @@
 package net.acladior.jobsandbackgrounds;
 
 import com.mojang.logging.LogUtils;
-import net.acladior.jobsandbackgrounds.items.AJBItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.acladior.jobsandbackgrounds.item.AJBItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
