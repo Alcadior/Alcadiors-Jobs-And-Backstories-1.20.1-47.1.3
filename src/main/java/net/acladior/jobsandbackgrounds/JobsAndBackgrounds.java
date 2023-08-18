@@ -1,6 +1,7 @@
 package net.acladior.jobsandbackgrounds;
 
 import com.mojang.logging.LogUtils;
+import net.acladior.jobsandbackgrounds.item.AJBCreativeModeTabs;
 import net.acladior.jobsandbackgrounds.item.AJBItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,6 +27,8 @@ public class JobsAndBackgrounds {
     private static final Logger LOGGER = LogUtils.getLogger();
     public JobsAndBackgrounds() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        AJBCreativeModeTabs.register(modEventBus);
 
         AJBItems.register(modEventBus);
 
