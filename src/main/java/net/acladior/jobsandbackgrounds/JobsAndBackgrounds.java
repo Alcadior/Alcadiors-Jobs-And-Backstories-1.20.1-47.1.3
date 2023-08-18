@@ -1,6 +1,9 @@
 package net.acladior.jobsandbackgrounds;
 
 import com.mojang.logging.LogUtils;
+import net.acladior.jobsandbackgrounds.items.AJBItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,16 +28,14 @@ public class JobsAndBackgrounds {
     public JobsAndBackgrounds() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
+        AJBItems.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::commonSetup); // Register the commonSetup method for modloading
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        MinecraftForge.EVENT_BUS.register(this); // Register ourselves for server and other game events we are interested in
+        modEventBus.addListener(this::addCreative); // Register the item to a creative tab
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC); // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -42,6 +43,21 @@ public class JobsAndBackgrounds {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(AJBItems.ENGINEERBADGE);
+            event.accept(AJBItems.ARCANISTBADGE);
+            event.accept(AJBItems.ARTIFICERBADGE);
+            event.accept(AJBItems.OFFICERBADGE);
+            event.accept(AJBItems.SOLDIERBADGE);
+            event.accept(AJBItems.ALCHEMISTBADGE);
+            event.accept(AJBItems.OCCULTISTBADGE);
+            event.accept(AJBItems.MAGEBADGE);
+            event.accept(AJBItems.CHEFBADGE);
+            event.accept(AJBItems.RANCHERBADGE);
+            event.accept(AJBItems.FARMERBADGE);
+            event.accept(AJBItems.BUREAUCRATBADGE);
+
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
