@@ -1,0 +1,17 @@
+{
+  "item.jobsandbackgrounds.engineer_badge": "Engineer Badge",
+  "item.jobsandbackgrounds.arcanist_badge": "Arcanist Badge",
+  "item.jobsandbackgrounds.artificer_badge": "Artificer Badge",
+  "item.jobsandbackgrounds.officer_badge": "Officer Badge",
+  "item.jobsandbackgrounds.soldier_badge": "Soldier Badge",
+  "item.jobsandbackgrounds.alchemist_badge": "Alchemist Badge",
+  "item.jobsandbackgrounds.occultist_badge": "Occultist Badge",
+  "item.jobsandbackgrounds.mage_badge": "Mage Badge",
+  "item.jobsandbackgrounds.chef_badge": "Chef Badge",
+  "item.jobsandbackgrounds.rancher_badge": "Rancher Badge",
+  "item.jobsandbackgrounds.farmer_badge": "Farmer Badge",
+  "item.jobsandbackgrounds.bureaucrat_badge": "Bureaucrat Badge",
+
+  "creativetab.jobsandbackgrounds": "AJB IDs"
+
+}
