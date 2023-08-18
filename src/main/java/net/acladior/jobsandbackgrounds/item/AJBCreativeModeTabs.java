@@ -13,9 +13,9 @@ public class AJBCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JobsAndBackgrounds.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> JOBS_AND_BACKGROUNDS_TAB = CREATIVE_MODE_TABS.register("jobs_and_backgrounds_tab",
+    public static final RegistryObject<CreativeModeTab> JOBS_AND_BACKGROUNDS_TAB = CREATIVE_MODE_TABS.register("jobsandbackgrounds_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(AJBItems.ENGINEERBADGE.get()))
-                    .title(Component.translatable("creativetab.jobs_and_backgrounds_tab"))
+                    .title(Component.translatable("creativetab.jobsandbackgrounds_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(AJBItems.ENGINEERBADGE.get());
                         pOutput.accept(AJBItems.ARCANISTBADGE.get());
