@@ -17,18 +17,18 @@ public class AJBCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(AJBItems.ENGINEERBADGE.get()))
                     .title(Component.translatable("creativetab.jobs_and_backgrounds_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(AJBItems.ENGINEERBADGE);
-                        pOutput.accept(AJBItems.ARCANISTBADGE);
-                        pOutput.accept(AJBItems.ARTIFICERBADGE);
-                        pOutput.accept(AJBItems.OFFICERBADGE);
-                        pOutput.accept(AJBItems.SOLDIERBADGE);
-                        pOutput.accept(AJBItems.ALCHEMISTBADGE);
-                        pOutput.accept(AJBItems.OCCULTISTBADGE);
-                        pOutput.accept(AJBItems.MAGEBADGE);
-                        pOutput.accept(AJBItems.CHEFBADGE);
-                        pOutput.accept(AJBItems.RANCHERBADGE);
-                        pOutput.accept(AJBItems.FARMERBADGE);
-                        pOutput.accept(AJBItems.BUREAUCRATBADGE);
+                        pOutput.accept(AJBItems.ENGINEERBADGE.get());
+                        pOutput.accept(AJBItems.ARCANISTBADGE.get());
+                        pOutput.accept(AJBItems.ARTIFICERBADGE.get());
+                        pOutput.accept(AJBItems.OFFICERBADGE.get());
+                        pOutput.accept(AJBItems.SOLDIERBADGE.get());
+                        pOutput.accept(AJBItems.ALCHEMISTBADGE.get());
+                        pOutput.accept(AJBItems.OCCULTISTBADGE.get());
+                        pOutput.accept(AJBItems.MAGEBADGE.get());
+                        pOutput.accept(AJBItems.CHEFBADGE.get());
+                        pOutput.accept(AJBItems.RANCHERBADGE.get());
+                        pOutput.accept(AJBItems.FARMERBADGE.get());
+                        pOutput.accept(AJBItems.BUREAUCRATBADGE.get());
                     })
                     .build());
 

@@ -10,6 +10,8 @@
   "item.jobs_and_backgrounds.chef_badge": "Chef Badge",
   "item.jobs_and_backgrounds.rancher_badge": "Rancher Badge",
   "item.jobs_and_backgrounds.farmer_badge": "Farmer Badge",
-  "item.jobs_and_backgrounds.bureaucrat_badge": "Bureaucrat Badge"
+  "item.jobs_and_backgrounds.bureaucrat_badge": "Bureaucrat Badge",
+
+  "creativetab.jobs_and_backgrounds": "AJB IDs"
 
 }

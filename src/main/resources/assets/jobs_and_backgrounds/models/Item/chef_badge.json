@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "Textures": {
-    "layer0": "jobs_and_backgrounds:item/chef_badge"
+    "layer0": "jobs_and_backgrounds:item/ID_Crafter"
   }
 }
